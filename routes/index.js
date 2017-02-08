@@ -32,7 +32,11 @@ router.get('/vote/:voteDirection/:imageID', (req, res, next)=>{
 	var imageID = req.params.imageID;
 	var voteD = req.params.voteDirection;
 	var insertVoteQuery = "INSERT INTO votes (ip, imageid, votedirection) VALUES ('"+req.ip+"',"+imageID+",'"+voteD+"')"
-	res.send(insertVoteQuery)
+	// res.send(insertVoteQuery)
+	connection.query(insertVoteQuery, (error, results, fields)=>{
+		if (error) throw error;
+		res.redirect('/');
+	})
 })
 
 /* GET standings page */
