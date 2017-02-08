@@ -3,7 +3,7 @@
 /* line 19, ../../compass/sass/styles.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #D7E0DD;
+  background-color: #B1CCC1;
 }
 
 /* line 24, ../../compass/sass/styles.scss */
@@ -13,16 +13,17 @@ body {
 
 /* line 28, ../../compass/sass/styles.scss */
 .header-wrapper {
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   color: #3F476C;
 }
 
 /* line 34, ../../compass/sass/styles.scss */
 .picture-wrapper img {
   border: 10px solid white;
+  max-width: 90vw;
 }
 
-/* line 40, ../../compass/sass/styles.scss */
+/* line 41, ../../compass/sass/styles.scss */
 .button-wrapper button {
   background-color: #86615C;
   color: #FFEDDF;
@@ -30,4 +31,38 @@ body {
   margin: 25px 50px;
   border: none;
   font-size: 20px;
+}
+
+/* line 52, ../../compass/sass/styles.scss */
+.header-row a, .header-row a:hover, .header-row a:active, .header-row a:visited {
+  color: #B1CCC1;
+}
+
+/* line 57, ../../compass/sass/styles.scss */
+.vote-button, .standings-button {
+  height: 80px;
+  line-height: 60px;
+  width: 50vw;
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+  color: #B1CCC1;
+  border-top: 10px solid #B1CCC1;
+  border-bottom: 10px solid #B1CCC1;
+  border-left: 10px solid #B1CCC1;
+}
+
+/* line 70, ../../compass/sass/styles.scss */
+.standings-button {
+  border-right: 10px solid #B1CCC1;
+}
+
+/* line 75, ../../compass/sass/styles.scss */
+.standings-wrapper img {
+  max-width: 97%;
+  border: 5px solid white;
+}
+/* line 79, ../../compass/sass/styles.scss */
+.standings-wrapper .standings-result {
+  margin-bottom: 20px;
 }

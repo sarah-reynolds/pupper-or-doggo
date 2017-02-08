@@ -26,13 +26,14 @@ body {
 }
 
 .header-wrapper {
-	font-family: 'Comfortaa';
+	font-family: 'Comfortaa', sans-serif;
 	color: $darkblue;
 }
 
 .picture-wrapper {
 	img {
 		border: 10px solid white;
+		max-width: 90vw;
 	}
 }
 
@@ -44,5 +45,38 @@ body {
 		margin: 25px 50px;
 		border: none;
 		font-size: 20px;
+	}
+}
+
+.header-row {
+	a, a:hover, a:active, a:visited {
+		color: $lightblue
+	}
+}
+
+.vote-button, .standings-button {
+	height: 80px;
+	line-height: 60px;
+	width: 50vw;
+	background-color: white;
+	font-size: 30px;
+	text-align: center;
+	color: $lightblue;
+	border-top: 10px solid $lightblue;
+	border-bottom: 10px solid $lightblue;
+	border-left: 10px solid $lightblue;
+}
+
+.standings-button {
+	border-right: 10px solid $lightblue;
+}
+
+.standings-wrapper {
+	img {
+		max-width: 97%;
+		border: 5px solid white;
+	}
+	.standings-result{
+		margin-bottom: 20px;
 	}
 }
