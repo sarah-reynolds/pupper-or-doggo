@@ -1,3 +1,3 @@
-##Pupper or Doggo Voting App
-
-###Take a look at the dog in the photo. Do you think it's a pupper or a doggo?
+##Pupper or Doggo 
+###Voting App
+Is it a pupper or a doggo? Cast your vote.

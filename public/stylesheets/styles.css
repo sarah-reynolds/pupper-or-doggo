@@ -1,7 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans");
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-/* line 16, ../../compass/sass/styles.scss */
+/* line 19, ../../compass/sass/styles.scss */
 body {
-  font-family: sans-serif;
-  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #D7E0DD;
+}
+
+/* line 25, ../../compass/sass/styles.scss */
+.picture-wrapper {
+  color: #3F476C;
+}
+
+/* line 29, ../../compass/sass/styles.scss */
+.header-wrapper {
+  font-family: 'Comfortaa';
+  color: #3F476C;
+}
+
+/* line 35, ../../compass/sass/styles.scss */
+.picture-wrapper img {
+  border: 10px solid white;
+}
+
+/* line 41, ../../compass/sass/styles.scss */
+.button-wrapper button {
+  background-color: #86615C;
+  color: #FFEDDF;
+  padding: 10px 30px;
+  margin: 25px 50px;
+  border: none;
+  font-size: 20px;
 }
