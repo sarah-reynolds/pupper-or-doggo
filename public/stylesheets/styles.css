@@ -6,23 +6,23 @@ body {
   background-color: #D7E0DD;
 }
 
-/* line 25, ../../compass/sass/styles.scss */
+/* line 24, ../../compass/sass/styles.scss */
 .picture-wrapper {
   color: #3F476C;
 }
 
-/* line 29, ../../compass/sass/styles.scss */
+/* line 28, ../../compass/sass/styles.scss */
 .header-wrapper {
   font-family: 'Comfortaa';
   color: #3F476C;
 }
 
-/* line 35, ../../compass/sass/styles.scss */
+/* line 34, ../../compass/sass/styles.scss */
 .picture-wrapper img {
   border: 10px solid white;
 }
 
-/* line 41, ../../compass/sass/styles.scss */
+/* line 40, ../../compass/sass/styles.scss */
 .button-wrapper button {
   background-color: #86615C;
   color: #FFEDDF;
