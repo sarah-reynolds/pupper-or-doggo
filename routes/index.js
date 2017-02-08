@@ -13,18 +13,29 @@ connection.connect();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+
+
+
 	var getImagesQuery = "SELECT * FROM images";
+
+	getImagesQuery = "SELECT * FROM images WHERE id NOT IN (SELECT imageid FROM votes WHERE ip = '"+req.ip+"')"
+
 	connection.query(getImagesQuery, (error, results, fields)=>{
 		var randomIndex = (Math.floor(Math.random() * results.length));
 		// res.json(results);
 		// res.json(results[randomIndex])
-		res.render('index', { 
-			title: 'Pupper or Doggo',
-			imageToRender: '/images/'+results[randomIndex].imageurl,
-			imageID: results[randomIndex].id
-		});
-	})
+		
+		if(results.length === 0){
+			res.render('index', { msg: "noImages" });
+		}else{
 
+			res.render('index', { 
+				title: 'Pupper or Doggo',
+				imageToRender: '/images/'+results[randomIndex].imageurl,
+				imageID: results[randomIndex].id
+			});
+		}
+	});
 });
 
 router.get('/vote/:voteDirection/:imageID', (req, res, next)=>{

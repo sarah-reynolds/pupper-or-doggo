@@ -17,6 +17,14 @@
 				<h1>Pupper or Doggo?</h1>
 			</div>
 		</div>
+		
+		<%if (typeof msg !== 'undefined') { %>				
+			<div class="row">
+				<div class="col-xs-12 text-center picture-wrapper">
+					<h4 class="text-center confirmation-area">You have voted on all images! Check out the <a href="/standings">standings</a>.</h4>
+				</div>
+			</div>
+		<% }else{ %>
 		<div class="row">
 			<div class="col-xs-12 text-center picture-wrapper">
 				<img src='<%= imageToRender %>' />
@@ -29,5 +37,6 @@
 				<a href='/vote/doggo/<%= imageID %>'><button type="button">Doggo</button></a>
 			</div>
 		</div>
+		<% } %>
 </body>
 </html>
